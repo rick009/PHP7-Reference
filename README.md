@@ -61,20 +61,24 @@ that are outlined below.
 Unarguably the greatest part about PHP 7 is the incredible performance boosts
 it provides to applications. This is a result of refactoring the Zend Engine to
 use more compact data structures and less heap allocations/deallocations.
+毫无疑问的是PHP7中最大的变化就是提供给英语系统性能上的提升。这是对zend引擎进行重构的结果，
+使其使用更多的压缩的数据结构和更少的内存的分配和回收。
 
 The performance gains on real world applications will vary, though many
 applications seem to receive a ~100% performance boost - with lower memory
 consumption too!
+真实情况下的应用系统获得的性能的提升会有所不同，然而大部分的应用系统都差不多会有100%的性能提升，以及更少的内存占用。
 
 The refactored codebase provides further opportunities for future optimisations
 as well (such as JIT compilation). So it looks like future PHP versions will
 continue to see performance enhancements too.
+代码库的重构会为未来的优化（例如JIT）打好基础。所以后续的PHP版本会带来持续的性能优化。
 
 PHP 7 performance chart comparisons:
  - [Turbocharging the Web with PHP 7](https://www.zend.com/en/resources/php7_infographic)
  - [Benchmarks from Rasmus's Sydney Talk](http://talks.php.net/oz15#/drupalbench)
 
-## Features
+## Features新特性
 
 ### Combined Comparison Operator
 The combined comparison operator (or spaceship operator) is a shorthand
