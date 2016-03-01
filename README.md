@@ -80,7 +80,7 @@ PHP 7 performance chart comparisons:
 
 ## Features新特性
 
-### Combined Comparison Operator
+### Combined Comparison Operator组合比较符
 The combined comparison operator (or spaceship operator) is a shorthand
 notation for performing three-way comparisons from two operands. It has an
 integer return value that can be either:
@@ -110,6 +110,7 @@ var_dump(['a', 'b'] <=> ['a', 'b']); // int(0)
 
 Objects are not comparable, and so using them as operands with this operator
 will result in undefined behaviour.
+对象是无法比较的，所以如果将对象作为操作数时将返回不可预知的结果。
 
 RFC: [Combined Comparison Operator](https://wiki.php.net/rfc/combined-comparison-operator)
 
