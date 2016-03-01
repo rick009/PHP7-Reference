@@ -72,7 +72,7 @@ consumption too!
 The refactored codebase provides further opportunities for future optimisations
 as well (such as JIT compilation). So it looks like future PHP versions will
 continue to see performance enhancements too.
-代码库的重构会为未来的优化（例如JIT）打好基础。所以后续的PHP版本会带来持续的性能优化。
+代码库的重构会为未来的优化（例如JIT编译）打好基础。所以后续的PHP版本会带来持续的性能优化。
 
 PHP 7 performance chart comparisons:
  - [Turbocharging the Web with PHP 7](https://www.zend.com/en/resources/php7_infographic)
@@ -86,8 +86,11 @@ notation for performing three-way comparisons from two operands. It has an
 integer return value that can be either:
 
 * a positive integer (if the left-hand operand is greater than the right-hand operand)
+* 如果左操作数大于右操作数则返回值大于0
 * 0 (if both operands are equal)
+* 相等则返回0
 * a negative integer (if the right-hand operand is greater than the left-hand operand)
+* 如果左操作数小于右操作数则返回值小于0
 
 The operator has the same precedence as the equality operators (`==`, `!=`,
 `===`, `!==`) and has the exact same behaviour as the other loose comparison
